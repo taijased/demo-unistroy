@@ -17,7 +17,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-//       print( sceneView.unprojectPoint(SCNVector3(touches.first.x, touches.first.y, 0)))
+//      let results = sceneView.hitTest(sceneView.center, types: [.])
+//        print(results.first?.worldTransform.columns.3)
+        
     }
     
     @IBOutlet weak var addButtonOutlet: UIButton!

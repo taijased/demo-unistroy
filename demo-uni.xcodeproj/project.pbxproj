@@ -293,7 +293,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-demo-uni/Pods-demo-uni-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-demo-uni/Pods-demo-uni-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AssetImportKit/AssetImportKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework",
@@ -308,7 +308,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demo-uni/Pods-demo-uni-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-demo-uni/Pods-demo-uni-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F847C0B2E203349A4A2776DA /* [CP] Check Pods Manifest.lock */ = {
@@ -505,7 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C8F3CLJ592;
+				DEVELOPMENT_TEAM = U5475K48TG;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,7 +516,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ARQ.Demo.Build.0003;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARQ.Demo.Build.0002;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
@@ -531,7 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C8F3CLJ592;
+				DEVELOPMENT_TEAM = U5475K48TG;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ARQ.Demo.Build.0003;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARQ.Demo.Build.0002;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;

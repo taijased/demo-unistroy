@@ -11,9 +11,9 @@ struct CardModel {
     static func fetchCard() -> [CardModel] {
         let firstItem = CardModel(mainImage: UIImage(named: "sushi1")!,
                                   cardName: "Sofa", modelPath: "assets.scnassets/sofa/Sofa.scn" )
-        let secondItem = CardModel(mainImage: UIImage(named: "sushi2")!,
+        let secondItem = CardModel(mainImage: UIImage(named: "sushi1")!,
                                    cardName: "Шкаф", modelPath: "lexa/eto/ebuchiy/put2")
-        let thirdItem = CardModel(mainImage: UIImage(named: "sushi3")!,
+        let thirdItem = CardModel(mainImage: UIImage(named: "sushi1")!,
                                   cardName: "Диван", modelPath: "lexa/eto/ebuchiy/put3")
         
         
@@ -23,7 +23,7 @@ struct CardModel {
     static func fetcTexture() -> [CardModel] {
         let firstItem = CardModel(mainImage: UIImage(named: "sushi1")!,
                                   cardName: "Обои", modelPath: "assets.scnassets/images/img.jpg")
-        let secondItem = CardModel(mainImage: UIImage(named: "sushi2")!,
+        let secondItem = CardModel(mainImage: UIImage(named: "sushi1")!,
                                   cardName: "Лев", modelPath: "assets.scnassets/images/img2.jpg")
 
         

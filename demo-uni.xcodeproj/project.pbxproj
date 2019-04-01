@@ -14,8 +14,6 @@
 		1F423E3E224912F4002D524D /* VirtualObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F423E3D224912F4002D524D /* VirtualObjects.swift */; };
 		1F5A698D22356C59007BB23B /* ExtendedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A698C22356C59007BB23B /* ExtendedNode.swift */; };
 		1F70E4F02241258500C1DFA5 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70E4EF2241258500C1DFA5 /* DataProvider.swift */; };
-		1FFD84FA2247FC6F00077536 /* AssetImportKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD84F92247FC6F00077536 /* AssetImportKit.framework */; };
-		1FFD84FB2247FC6F00077536 /* AssetImportKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD84F92247FC6F00077536 /* AssetImportKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FFD84FE2248169300077536 /* NodeRender.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD84FC2248169300077536 /* NodeRender.metal */; };
 		1FFD84FF2248169300077536 /* NodeTechnique.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FFD84FD2248169300077536 /* NodeTechnique.plist */; };
 		2295A786223292A700C9E594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2295A785223292A700C9E594 /* AppDelegate.swift */; };
@@ -43,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1FFD84FB2247FC6F00077536 /* AssetImportKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +55,6 @@
 		1F423E3D224912F4002D524D /* VirtualObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObjects.swift; sourceTree = "<group>"; };
 		1F5A698C22356C59007BB23B /* ExtendedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedNode.swift; sourceTree = "<group>"; };
 		1F70E4EF2241258500C1DFA5 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
-		1FFD84F92247FC6F00077536 /* AssetImportKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AssetImportKit.framework; sourceTree = "<group>"; };
 		1FFD84FC2248169300077536 /* NodeRender.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = NodeRender.metal; sourceTree = "<group>"; };
 		1FFD84FD2248169300077536 /* NodeTechnique.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
 		2295A782223292A700C9E594 /* demo-uni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-uni.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C87AF99F0A3E6A0E07944E43 /* Pods_demo_uni.framework in Frameworks */,
-				1FFD84FA2247FC6F00077536 /* AssetImportKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +102,6 @@
 		2295A779223292A700C9E594 = {
 			isa = PBXGroup;
 			children = (
-				1FFD84F92247FC6F00077536 /* AssetImportKit.framework */,
 				2295A784223292A700C9E594 /* demo-uni */,
 				2295A783223292A700C9E594 /* Products */,
 				528BEE7A58F7FECE0BC75753 /* Pods */,
@@ -298,8 +292,9 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-demo-uni/Pods-demo-uni-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-demo-uni/Pods-demo-uni-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AssetImportKit/AssetImportKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -307,11 +302,12 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AssetImportKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZIPFoundation.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-demo-uni/Pods-demo-uni-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demo-uni/Pods-demo-uni-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F847C0B2E203349A4A2776DA /* [CP] Check Pods Manifest.lock */ = {
@@ -508,7 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U5475K48TG;
+				DEVELOPMENT_TEAM = C8F3CLJ592;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,7 +515,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ARQ.Demo.Build.0002;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARQ.Demo.Build.0003;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
@@ -534,7 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U5475K48TG;
+				DEVELOPMENT_TEAM = C8F3CLJ592;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,7 +541,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ARQ.Demo.Build.0002;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARQ.Demo.Build.0003;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;

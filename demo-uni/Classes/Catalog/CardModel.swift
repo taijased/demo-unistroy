@@ -6,34 +6,28 @@ import UIKit
 struct CardModel {
     var mainImage: UIImage
     var cardName: String
-    
+    var modelPath: String
     
     static func fetchCard() -> [CardModel] {
         let firstItem = CardModel(mainImage: UIImage(named: "sushi1")!,
-                                  cardName: "Кресло")
+                                  cardName: "Sofa", modelPath: "assets.scnassets/sofa/Sofa.scn" )
         let secondItem = CardModel(mainImage: UIImage(named: "sushi2")!,
-                                   cardName: "Шкаф")
+                                   cardName: "Шкаф", modelPath: "lexa/eto/ebuchiy/put2")
         let thirdItem = CardModel(mainImage: UIImage(named: "sushi3")!,
-                                  cardName: "Диван")
-        let fouthItem = CardModel(mainImage: UIImage(named: "sushi4")!,
-                                  cardName: "Стол")
-        let five = CardModel(mainImage: UIImage(named: "sushi1")!,
-                             cardName: "Кресло")
-        let six = CardModel(mainImage: UIImage(named: "sushi2")!,
-                            cardName: "Зеркало")
-        let seven = CardModel(mainImage: UIImage(named: "sushi3")!,
-                              cardName: "Комод")
-        let eight = CardModel(mainImage: UIImage(named: "sushi4")!,
-                              cardName: "Шкаф")
+                                  cardName: "Диван", modelPath: "lexa/eto/ebuchiy/put3")
         
         
-        return [firstItem, secondItem, thirdItem, fouthItem, five, six, seven, eight]
+        
+        return [firstItem, secondItem, thirdItem]
     }
     static func fetcTexture() -> [CardModel] {
         let firstItem = CardModel(mainImage: UIImage(named: "sushi1")!,
-                                  cardName: "Обои")
+                                  cardName: "Обои", modelPath: "lexa/eto/ebuchiy/put1")
+        let secondItem = CardModel(mainImage: UIImage(named: "sushi2")!,
+                                  cardName: "Плитка", modelPath: "lexa/eto/ebuchiy/put2")
+
         
-        return [firstItem]
+        return [firstItem, secondItem]
     }
 }
 

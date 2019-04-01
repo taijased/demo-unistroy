@@ -11,7 +11,12 @@ class CatalogViewController: UIViewController {
     
     
     private var furnitureCollectionView = FurnitureCollectionView()
+    var onSelectFurniture: ((CardModel) -> Void)?
+    var onSelectTexture: ((CardModel) -> Void)?
+    
+    
     private var textureCollectionView = TextureCollectionView()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +31,10 @@ class CatalogViewController: UIViewController {
         furnitureCollectionView.topAnchor.constraint(equalTo: mebelLabel.bottomAnchor, constant: 0).isActive = true
         furnitureCollectionView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         furnitureCollectionView.set(cells: CardModel.fetchCard())
+        furnitureCollectionView.onSelectFurniture = { [weak self] card in
+            self?.onSelectFurniture?(card)
+        }
+       
         
         //        add textures
         
@@ -36,6 +45,9 @@ class CatalogViewController: UIViewController {
         textureCollectionView.topAnchor.constraint(equalTo: textureLabel.bottomAnchor, constant: 0).isActive = true
         textureCollectionView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         textureCollectionView.set(cells: CardModel.fetcTexture())
+        textureCollectionView.onSelectTexture = { [weak self] card in
+            self?.onSelectTexture?(card)
+        }
         
     }
 }

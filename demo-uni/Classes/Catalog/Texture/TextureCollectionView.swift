@@ -12,6 +12,7 @@ class TextureCollectionView: UICollectionView, UICollectionViewDelegate, UIColle
     
     
     var cells = [CardModel]()
+    var onSelectTexture: ((CardModel) -> Void)?
     
     init() {
         let layout = UICollectionViewFlowLayout()
@@ -51,6 +52,10 @@ class TextureCollectionView: UICollectionView, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: Constants.galleryItemWidth, height: Constants.galleryItemWidth)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.onSelectTexture?(cells[indexPath.row])
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

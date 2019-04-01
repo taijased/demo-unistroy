@@ -212,6 +212,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //        self.view.addSubview(visualEffectView)
         
         catalogViewController = CatalogViewController(nibName:"CatalogViewController", bundle:nil)
+        catalogViewController.onSelectFurniture = { [weak self] card in
+//            print(card.modelPath)
+            
+            let sofaScene = SCNScene(named: card.modelPath)
+            let furnitureNode = Furniture()
+            furnitureNode.name = "sofa"
+            sofaScene?.rootNode.childNodes.forEach{
+                furnitureNode.addChildNode($0)
+            }
+            sceneView.scene.rootNode.addChildNode(furnitureNode)
+        }
+        catalogViewController.onSelectTexture = { [weak self] card in
+            print(card.modelPath)
+        }
         
         
         self.addChild(catalogViewController)

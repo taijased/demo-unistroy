@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.0.0-beta.3)
+  - AssetImportKit (1.0.8)
   - ZIPFoundation (0.9.8)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.3)
+  - AssetImportKit
   - ZIPFoundation
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AssetImportKit
     - ZIPFoundation
 
 SPEC CHECKSUMS:
   Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
+  AssetImportKit: 187cd0857691c154b3fe9cf993c94bff27639589
   ZIPFoundation: b1f07e4409baf1641f3fe5948b2a1c3f5c500cb1
 
-PODFILE CHECKSUM: 34b613b8c50347747beb323c5a078c2738c29bb2
+PODFILE CHECKSUM: 0ec1f686de7bcb2ba8a638d841fd6bf20df913a3
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

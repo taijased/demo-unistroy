@@ -12,6 +12,7 @@ import UIKit
 class FurnitureCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var cells = [CardModel]()
+    var onSelectFurniture: ((CardModel) -> Void)?
     
     init() {
         let layout = UICollectionViewFlowLayout()
@@ -52,6 +53,11 @@ class FurnitureCollectionView: UICollectionView, UICollectionViewDelegate, UICol
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: Constants.galleryItemWidth, height: Constants.galleryItemWidth)
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.onSelectFurniture?(cells[indexPath.row])
+    }
+    
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

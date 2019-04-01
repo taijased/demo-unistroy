@@ -119,9 +119,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var runningAnimations = [UIViewPropertyAnimator]()
     var animationProgressWhenInterrupted:CGFloat = 0
     
+    var isWallTapped = false
     
     @IBAction func doneScene(_ sender: Any) {
-        catalogViewController.view.frame = CGRect(x: 0, y: self.view.frame.height - catalogHandleAreaHeight, width: self.view.bounds.width, height: catalogHeight)
+        if(isWallTapped) {
+            catalogViewController.view.frame = CGRect(x: 0, y: self.view.frame.height - catalogHandleAreaHeight, width: self.view.bounds.width, height: catalogHeight)
+            
+        }
+        else
+        {
+            wallChainsSet.addChainSet()
+            isWallTapped = true
+        }
     }
     
     
@@ -184,10 +193,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBAction func plusButton(_ sender: Any) {
         catalogViewController.view.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
         wallChainsSet.addPointer()
+        isWallTapped = false
     }
     
     @IBAction func continueButton(_ sender: Any) {
-        wallChainsSet.addChainSet()
+       wallChainsSet.addChainSet()
     }
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {

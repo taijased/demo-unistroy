@@ -241,6 +241,7 @@
 				TargetAttributes = {
 					2295A781223292A700C9E594 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;

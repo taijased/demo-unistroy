@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -135,7 +135,7 @@
 		03EEEA194D0C62A59F73190E75274DB9 /* Archive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Archive.swift; path = Sources/ZIPFoundation/Archive.swift; sourceTree = "<group>"; };
 		05CA4B87C372E51FFFFFDD5EAEC88875 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		0A4EC5FA3271D5BEE3843C5FFB5E1273 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		0E8374DBF040E4FF701A177C8DAA8AE6 /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZIPFoundation.framework; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E8374DBF040E4FF701A177C8DAA8AE6 /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FDFD51B872BA42EAFAB9E435A526F7 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		117069F3086E287B906A51224A13CE16 /* aiNode + getMaterials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "aiNode + getMaterials.swift"; path = "AssetImportKit/AssetImportKit/Extensions/assimp/aiNode/aiNode + getMaterials.swift"; sourceTree = "<group>"; };
 		1267EAF8213B01EC8E749B3C847A99C9 /* AssetImporterScene.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetImporterScene.swift; path = AssetImportKit/AssetImportKit/AssetImporterScene.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		617477E5DF3EC1FCA3BDA84D4990B59A /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		63FB8D8FCE071D5B97392F4DB46A5291 /* AssetImportKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssetImportKit-umbrella.h"; sourceTree = "<group>"; };
 		65C70C66270E1443C512D0A6B46B42A5 /* aiNode + getMeshes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "aiNode + getMeshes.swift"; path = "AssetImportKit/AssetImportKit/Extensions/assimp/aiNode/aiNode + getMeshes.swift"; sourceTree = "<group>"; };
-		698A998AE15DB68DE620ABC13B781A34 /* AssetImportKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AssetImportKit.framework; path = AssetImportKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		698A998AE15DB68DE620ABC13B781A34 /* AssetImportKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AssetImportKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2DA7233E40840BBBAC3FCDD5BE3E3E /* SCNNode + makeSCNCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNNode + makeSCNCamera.swift"; path = "AssetImportKit/AssetImportKit/Extensions/SceneKit/SCNNode/SCNNode + makeSCNCamera.swift"; sourceTree = "<group>"; };
 		6EC66F0D1A490585C385C82676851BA2 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		6EE1082F106AE00A459C7C7AADB6172E /* Pods-demo-uni-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-demo-uni-dummy.m"; sourceTree = "<group>"; };
@@ -195,11 +195,11 @@
 		877A4E97948E1CA369A403B714F95855 /* SCNMaterial + Multiply.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNMaterial + Multiply.swift"; path = "AssetImportKit/AssetImportKit/Extensions/SceneKit/SCNMaterial/SCNMaterial + Multiply.swift"; sourceTree = "<group>"; };
 		884F883D12C02A2C9DF09077B798B913 /* aiNode + makeNormalGeometrySource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "aiNode + makeNormalGeometrySource.swift"; path = "AssetImportKit/AssetImportKit/Extensions/assimp/aiNode/aiNode + SCNGeometrySource/aiNode + makeNormalGeometrySource.swift"; sourceTree = "<group>"; };
 		8B9C36EB9D7E38075BB108595B1162EC /* aiMesh + makeIndicesGeometryElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "aiMesh + makeIndicesGeometryElement.swift"; path = "AssetImportKit/AssetImportKit/Extensions/assimp/aiMesh/aiMesh + SCNGeometryElement/aiMesh + makeIndicesGeometryElement.swift"; sourceTree = "<group>"; };
-		8BDD94A58B3C7BAC448D4AFB61540803 /* Pods_demo_uni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_demo_uni.framework; path = "Pods-demo-uni.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BDD94A58B3C7BAC448D4AFB61540803 /* Pods_demo_uni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo_uni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAD59232D10390C4621ED1AEACEAD40 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		8CDB97183D95A0E21FF928988165AC9C /* aiNode + getNumberOfVertices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "aiNode + getNumberOfVertices.swift"; path = "AssetImportKit/AssetImportKit/Extensions/assimp/aiNode/aiNode + getNumberOfVertices.swift"; sourceTree = "<group>"; };
 		8D66F4085CDBE796A22B69F37C661D6E /* aiBone + getWeights.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "aiBone + getWeights.swift"; path = "AssetImportKit/AssetImportKit/Extensions/assimp/aiBone/aiBone + getWeights.swift"; sourceTree = "<group>"; };
-		8E561359682E3FFD4E19EF4A5A6C75CE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E561359682E3FFD4E19EF4A5A6C75CE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9099BB03863F90486B675A2D2EFC2894 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		930087A13B7C539FDE0C55931CE652A5 /* aiNode + makeGeometryElementsForNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "aiNode + makeGeometryElementsForNode.swift"; path = "AssetImportKit/AssetImportKit/Extensions/assimp/aiNode/aiNode + GeometryElements/aiNode + makeGeometryElementsForNode.swift"; sourceTree = "<group>"; };
 		961299FAFCCADFD06F03B3F018A35F25 /* AssetImportKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssetImportKit-prefix.pch"; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 		974F9AE483F729FD235D0020B7BD6B09 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		9905F59C947FD2CE47EBA0E9A0A9BFAB /* Pods-demo-uni-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-demo-uni-umbrella.h"; sourceTree = "<group>"; };
 		9A2ED3A9780A74E82D16ABD0B64232BF /* SCNMaterial + LightningModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNMaterial + LightningModel.swift"; path = "AssetImportKit/AssetImportKit/Extensions/SceneKit/SCNMaterial/SCNMaterial + LightningModel.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0DF1871FF6AE10F366183E9EC71D4D6 /* Data+Serialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Serialization.swift"; path = "Sources/ZIPFoundation/Data+Serialization.swift"; sourceTree = "<group>"; };
 		A183109C433DE72C0C02E6962FD0023B /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		A1FBB023A7F2C549CAA87971BE94651E /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
@@ -312,7 +312,6 @@
 				1DCB529B90C0E864D16A4128A7D18AF3 /* FileManager+ZIP.swift */,
 				CE044369335920C00831BCE4E62BBAAD /* Support Files */,
 			);
-			name = ZIPFoundation;
 			path = ZIPFoundation;
 			sourceTree = "<group>";
 		};
@@ -359,7 +358,6 @@
 				867009E96C73E29D17C288D262A289D3 /* Validation.swift */,
 				EC05519251B36817E1270EA7BE2252B8 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -459,7 +457,6 @@
 				C92E57F71A69BD223A5A868119320270 /* Frameworks */,
 				7AFF7962CB5D442D3D80F595ECFD74F4 /* Support Files */,
 			);
-			name = AssetImportKit;
 			path = AssetImportKit;
 			sourceTree = "<group>";
 		};
@@ -650,14 +647,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					37E1D67040BDF0D4D836852D15C6C688 = {
+						LastSwiftMigration = 1020;
+					};
+					4D35623D9E6C23B6235BAD212283F0FE = {
+						LastSwiftMigration = 1020;
+					};
+					628DA498255215479ECAD389BEADB5E8 = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 9AB245A3AA79F3933C6C5E77C395D78D /* Products */;
@@ -863,11 +872,7 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -898,11 +903,7 @@
 				INFOPLIST_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation.modulemap";
 				PRODUCT_MODULE_NAME = ZIPFoundation;
 				PRODUCT_NAME = ZIPFoundation;
@@ -934,11 +935,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-demo-uni/Pods-demo-uni-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-demo-uni/Pods-demo-uni.modulemap";
 				OTHER_LDFLAGS = "";
@@ -972,11 +969,7 @@
 				INFOPLIST_FILE = "Target Support Files/AssetImportKit/AssetImportKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AssetImportKit/AssetImportKit.modulemap";
 				PRODUCT_MODULE_NAME = AssetImportKit;
 				PRODUCT_NAME = AssetImportKit;
@@ -1008,11 +1001,7 @@
 				INFOPLIST_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation.modulemap";
 				PRODUCT_MODULE_NAME = ZIPFoundation;
 				PRODUCT_NAME = ZIPFoundation;
@@ -1045,11 +1034,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-demo-uni/Pods-demo-uni-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-demo-uni/Pods-demo-uni.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1119,8 +1104,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1144,11 +1128,7 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -1181,11 +1161,7 @@
 				INFOPLIST_FILE = "Target Support Files/AssetImportKit/AssetImportKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AssetImportKit/AssetImportKit.modulemap";
 				PRODUCT_MODULE_NAME = AssetImportKit;
 				PRODUCT_NAME = AssetImportKit;

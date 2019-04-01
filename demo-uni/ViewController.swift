@@ -21,21 +21,21 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var addButtonOutlet: UIButton!
     
     ////////DOWNLOAD
-    @IBAction func downloadButton(_ sender: Any) {
+//    @IBAction func downloadButton(_ sender: Any) {
 //        showAlert()
 //        dataProvider.startDownload()
         ///////Чиста для тестов тут
 
-        let sofaScene = SCNScene(named: "assets.scnassets/sofa/Sofa.scn")
-        let furnitureNode = Furniture()
-        furnitureNode.name = "sofa"
-        sofaScene?.rootNode.childNodes.forEach{
-            furnitureNode.addChildNode($0)
-        }
-        sceneView.scene.rootNode.addChildNode(furnitureNode)
-        
-    }
-    @IBAction func unzipButton(_ sender: Any) {
+//        let sofaScene = SCNScene(named: "assets.scnassets/sofa/Sofa.scn")
+//        let furnitureNode = Furniture()
+//        furnitureNode.name = "sofa"
+//        sofaScene?.rootNode.childNodes.forEach{
+//            furnitureNode.addChildNode($0)
+//        }
+//        sceneView.scene.rootNode.addChildNode(furnitureNode)
+//
+//    }
+//    @IBAction func unzipButton(_ sender: Any) {
 ////                   unzipFile()
 //
 //        let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
@@ -87,14 +87,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //            print("huiii")
 //        }
 //
-        wallChainsSet.textureWalls(textureLength: 1, textureWidth: 1, textureImage: UIImage(named: "assets.scnassets/images/img2.jpg"))
-    }
-    @IBOutlet weak var unzipOutlet: UIButton!{
-        didSet {
+//        wallChainsSet.textureWalls(textureLength: 1, textureWidth: 1, textureImage: UIImage(named: "assets.scnassets/images/img2.jpg"))
+//    }
+//    @IBOutlet weak var unzipOutlet: UIButton!{
+//        didSet {
             //            unzipOutlet.isHidden = true
             
-        }
-    }
+//        }
+//    }
     ////////
     
     
@@ -175,7 +175,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             self.filePath = location.absoluteString
             self.alert.dismiss(animated: false, completion: nil)
             self.postNotification()
-            self.unzipOutlet.isHidden = false
         }
         /////////
         
@@ -212,21 +211,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //        self.view.addSubview(visualEffectView)
         
         catalogViewController = CatalogViewController(nibName:"CatalogViewController", bundle:nil)
-        catalogViewController.onSelectFurniture = { [weak self] card in
-//            print(card.modelPath)
-            
-            let sofaScene = SCNScene(named: card.modelPath)
-            let furnitureNode = Furniture()
-            furnitureNode.name = "sofa"
-            sofaScene?.rootNode.childNodes.forEach{
-                furnitureNode.addChildNode($0)
-            }
-            sceneView.scene.rootNode.addChildNode(furnitureNode)
+        catalogViewController.onSelectFurniture = { furniture in
+            self.selectFurniture(furniture: furniture)
         }
-        catalogViewController.onSelectTexture = { [weak self] card in
-            print(card.modelPath)
+        catalogViewController.onSelectTexture = { texture in
+            self.selectTexture(texture: texture)
         }
-        
         
         self.addChild(catalogViewController)
         self.view.addSubview(catalogViewController.view)
@@ -250,6 +240,25 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         catalogViewController.handleArea.addGestureRecognizer(panGestureRecognizer)
         
         
+    }
+    private func selectTexture(texture: CardModel) {
+        wallChainsSet.textureWalls(textureLength: 1, textureWidth: 1, textureImage: UIImage(named: texture.modelPath))
+    }
+    private func selectFurniture(furniture: CardModel) {
+        
+        let hitTest = sceneView!.hitTest(sceneView.center, types: .existingPlane)
+        let result = hitTest.last
+        guard let transform = result?.worldTransform else {return}
+        let thirdColumn = transform.columns.3
+        
+        let sofaScene = SCNScene(named: furniture.modelPath)
+        let furnitureNode = Furniture()
+        furnitureNode.position = SCNVector3(thirdColumn.x, thirdColumn.y, thirdColumn.z)
+        furnitureNode.name = furniture.cardName
+        sofaScene?.rootNode.childNodes.forEach{
+            furnitureNode.addChildNode($0)
+        }
+        self.sceneView.scene.rootNode.addChildNode(furnitureNode)
     }
     
     @objc

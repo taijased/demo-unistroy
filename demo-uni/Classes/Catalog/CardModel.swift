@@ -22,9 +22,9 @@ struct CardModel {
     }
     static func fetcTexture() -> [CardModel] {
         let firstItem = CardModel(mainImage: UIImage(named: "sushi1")!,
-                                  cardName: "Обои", modelPath: "lexa/eto/ebuchiy/put1")
+                                  cardName: "Обои", modelPath: "assets.scnassets/images/img.jpg")
         let secondItem = CardModel(mainImage: UIImage(named: "sushi2")!,
-                                  cardName: "Плитка", modelPath: "lexa/eto/ebuchiy/put2")
+                                  cardName: "Лев", modelPath: "assets.scnassets/images/img2.jpg")
 
         
         return [firstItem, secondItem]

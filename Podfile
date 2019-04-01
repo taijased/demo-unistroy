@@ -6,5 +6,5 @@ target 'demo-uni' do
   use_frameworks!
 	pod 'ZIPFoundation'
   # Pods for DownloadFile
-
+  pod 'Alamofire', '~> 5.0.0-beta.3'
 end

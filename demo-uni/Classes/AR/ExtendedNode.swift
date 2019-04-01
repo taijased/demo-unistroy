@@ -11,7 +11,12 @@ import SceneKit
 import ARKit
 
 class ExtendedNode: SCNNode, ARInteractionsProtocol {
-    func pan(gesture: UIPanGestureRecognizer, sceneView: ARSCNView, planeAnchor: ARPlaneAnchor) {
+    
+    func preparation(gesture: UIGestureRecognizer, sceneView: ARSCNView, planeAnchor: ARPlaneAnchor) {
+        
+    }
+    
+    func pan(gesture: UIPanGestureRecognizer, sceneView: ARSCNView) {
         
     }
     

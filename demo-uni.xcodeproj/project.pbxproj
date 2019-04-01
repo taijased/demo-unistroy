@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F09F576224BCAFA004E9123 /* AlamofireNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09F575224BCAFA004E9123 /* AlamofireNetworkRequest.swift */; };
 		1F42139822341DAF0047A6E3 /* WallCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F42139722341DAF0047A6E3 /* WallCreater.swift */; };
 		1F42139A223449B40047A6E3 /* GeometryPrimitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F421399223449B40047A6E3 /* GeometryPrimitives.swift */; };
 		1F42139C22344E4D0047A6E3 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F42139B22344E4D0047A6E3 /* Math.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F09F575224BCAFA004E9123 /* AlamofireNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkRequest.swift; sourceTree = "<group>"; };
 		1F42139722341DAF0047A6E3 /* WallCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallCreater.swift; sourceTree = "<group>"; };
 		1F421399223449B40047A6E3 /* GeometryPrimitives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPrimitives.swift; sourceTree = "<group>"; };
 		1F42139B22344E4D0047A6E3 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				8A5114EB2237D12200EDAB91 /* AR */,
 				8A5114ED2237D15200EDAB91 /* Catalog */,
 				1F70E4EF2241258500C1DFA5 /* DataProvider.swift */,
+				1F09F575224BCAFA004E9123 /* AlamofireNetworkRequest.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -296,12 +299,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-demo-uni/Pods-demo-uni-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZIPFoundation.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +358,7 @@
 				2295A788223292A700C9E594 /* ViewController.swift in Sources */,
 				8A5114F92237D1FD00EDAB91 /* FurnitureCollectionViewCell.swift in Sources */,
 				1F70E4F02241258500C1DFA5 /* DataProvider.swift in Sources */,
+				1F09F576224BCAFA004E9123 /* AlamofireNetworkRequest.swift in Sources */,
 				2295A786223292A700C9E594 /* AppDelegate.swift in Sources */,
 				8A5114F52237D1D100EDAB91 /* TextureCollectionView.swift in Sources */,
 			);

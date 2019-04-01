@@ -12,7 +12,8 @@ protocol ARInteractionsProtocol
 {
     func interactingNode(gesture: UIGestureRecognizer) -> ARInteractionsProtocol!
     func rotate(gesture: UIRotationGestureRecognizer, sceneView: ARSCNView)
-    func pan(gesture: UIPanGestureRecognizer, sceneView: ARSCNView, planeAnchor: ARPlaneAnchor)
+    func pan(gesture: UIPanGestureRecognizer, sceneView: ARSCNView)
+    func preparation(gesture: UIGestureRecognizer, sceneView: ARSCNView, planeAnchor: ARPlaneAnchor)
     func pinch(gesture: UIPinchGestureRecognizer, sceneView: ARSCNView)
     func tap(gesture: UITapGestureRecognizer, sceneView: ARSCNView)
 }
@@ -74,6 +75,7 @@ class ARInteractions:NSObject, UIGestureRecognizerDelegate {
     @objc func didTap(_ gesture: UITapGestureRecognizer)
     {
         guard let interactingNode = interactingNode(gesture: gesture) else {return}
+//        interactingNode.preparation(gesture: gesture, sceneView: sceneView, planeAnchor: planeAnchor)
         interactingNode.tap(gesture: gesture, sceneView: sceneView)
     }
     
@@ -82,9 +84,10 @@ class ARInteractions:NSObject, UIGestureRecognizerDelegate {
         switch gesture.state {
         case .began:
             guard let interactingNode = interactingNode(gesture: gesture) else {return}
+            interactingNode.preparation(gesture: gesture, sceneView: sceneView, planeAnchor: planeAnchor)
             selectedObject = interactingNode
         case .changed:
-            selectedObject?.pan(gesture: gesture, sceneView: sceneView, planeAnchor: planeAnchor)
+            selectedObject?.pan(gesture: gesture, sceneView: sceneView)
         case .ended:
             fallthrough
         default:
@@ -97,6 +100,7 @@ class ARInteractions:NSObject, UIGestureRecognizerDelegate {
         switch gesture.state {
         case .began:
             guard let interactingNode = interactingNode(gesture: gesture) else {return}
+            interactingNode.preparation(gesture: gesture, sceneView: sceneView, planeAnchor: planeAnchor)
             selectedObject = interactingNode
         case .changed:
             selectedObject?.rotate(gesture: gesture, sceneView: sceneView)
@@ -126,7 +130,7 @@ class ARInteractions:NSObject, UIGestureRecognizerDelegate {
     
     private func interactingNode(gesture: UIGestureRecognizer) -> ARInteractionsProtocol!
     {
-        guard let nodeUnderTouch = sceneView?.nodeAt(point: gesture.location(in: sceneView)) else {return nil}
+        guard let nodeUnderTouch = objectInteracting(with: gesture, in: sceneView) else {return nil}//sceneView?.nodeAt(point: gesture.location(in: sceneView)) else {return nil}
         if(nodeUnderTouch is ARInteractionsProtocol)
         {
            return (nodeUnderTouch as? ARInteractionsProtocol)?.interactingNode(gesture: gesture)
@@ -137,16 +141,16 @@ class ARInteractions:NSObject, UIGestureRecognizerDelegate {
         }
     }
     
-//    private func objectInteracting(with gesture: UIGestureRecognizer, in view: ARSCNView) -> SCNNode! {
-//        for index in 0..<gesture.numberOfTouches {
-//            let touchLocation = gesture.location(ofTouch: index, in: view)
-//            if let object = view.nodeAt(point: touchLocation) {
-//                return SCNNode.lastNode(object)
-//            }
-//        }
-//        return sceneView?.nodeAt(point: gesture.center(in: view))
-//        
-//    }
+    private func objectInteracting(with gesture: UIGestureRecognizer, in view: ARSCNView) -> SCNNode! {
+        for index in 0..<gesture.numberOfTouches {
+            let touchLocation = gesture.location(ofTouch: index, in: view)
+            if let object = view.nodeAt(point: touchLocation) {
+                return object
+            }
+        }
+        return sceneView?.nodeAt(point: gesture.center(in: view))
+        
+    }
 }
 
 extension SCNNode {

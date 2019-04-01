@@ -12,15 +12,11 @@ import UserNotifications
 import ZIPFoundation
 import SceneKit.ModelIO
 import AssetImportKit
+import Alamofire
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-//      let results = sceneView.hitTest(sceneView.center, types: [.])
-//        print(results.first?.worldTransform.columns.3)
-        
-    }
+
     
     @IBOutlet weak var addButtonOutlet: UIButton!
     

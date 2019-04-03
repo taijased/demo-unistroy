@@ -133,21 +133,21 @@ class Furniture:ExtendedNode
     
     func highlight()
     {
-        if(isHighlighted) {return}
-        guard let highlighter = highlighterNode else {return}
-        isHighlighted = true
-        DispatchQueue.main.async {
-            self.addChildNode(highlighter)
-        }
+//        if(isHighlighted) {return}
+//        guard let highlighter = highlighterNode else {return}
+//        isHighlighted = true
+//        DispatchQueue.main.async {
+//            self.addChildNode(highlighter)
+//        }
     }
     
     func removeHighlight()
     {
-        if(!isHighlighted) {return}
-        guard let highlighter = highlighterNode else {return}
-        DispatchQueue.main.async {
-            highlighter.removeFromParentNode()
-        }
-        isHighlighted = false
+//        if(!isHighlighted) {return}
+//        guard let highlighter = highlighterNode else {return}
+//        DispatchQueue.main.async {
+//            highlighter.removeFromParentNode()
+//        }
+//        isHighlighted = false
     }
 }

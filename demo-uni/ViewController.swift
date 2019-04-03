@@ -266,8 +266,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         furnitureNode.position = SCNVector3(thirdColumn.x, thirdColumn.y, thirdColumn.z)
         furnitureNode.name = furniture.cardName
         sofaScene?.rootNode.childNodes.forEach{
+            $0.scale = $0.scale * 0.001
+            $0.position = $0.position * 0.001
             furnitureNode.addChildNode($0)
         }
+        print("place")
         self.sceneView.scene.rootNode.addChildNode(furnitureNode)
     }
     

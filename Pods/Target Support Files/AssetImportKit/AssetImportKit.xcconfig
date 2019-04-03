@@ -1,14 +1,14 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/AssetImportKit
 ENABLE_BITCODE = NO
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/AssetImportKit/Dependencies/Assimp/include
+HEADER_SEARCH_PATHS = $(PROJECT_DIR)/AssetImportKit/Dependencies/Assimp/include
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/AssetImportKit/AssetImportKit/AssetImportKit/Dependencies/Assimp/lib/iOS"
-OTHER_LDFLAGS = -ObjC -all_load -l"IrrXML-iOS" -l"assimp-iOS" -l"stdc++" -l"z"
-OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+OTHER_LDFLAGS = $(inherited) -ObjC -all_load -l"IrrXML-iOS" -l"assimp-iOS" -l"stdc++" -l"z"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}
 PODS_TARGET_SRCROOT = ${PODS_ROOT}/AssetImportKit
 PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
 SKIP_INSTALL = YES
-SWIFT_INCLUDE_PATHS = $(inherited) $(PROJECT_DIR)/AssetImportKit/AssetImportKit/AssetImportKit/
+SWIFT_INCLUDE_PATHS = $(PROJECT_DIR)/AssetImportKit/AssetImportKit/AssetImportKit/

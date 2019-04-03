@@ -20,7 +20,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="633"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKb-Yt-9FW">
@@ -29,7 +29,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отделка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrI-M0-VSe">
-                    <rect key="frame" x="16" y="306" width="64" height="18"/>
+                    <rect key="frame" x="16" y="336" width="64" height="18"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="64" id="lld-Sb-gIu"/>
                         <constraint firstAttribute="height" constant="18" id="tAc-bW-QeZ"/>
@@ -66,14 +66,14 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="aS8-33-nBA" secondAttribute="top" constant="11" id="8bT-Uq-Tuc"/>
                 <constraint firstAttribute="trailing" secondItem="aS8-33-nBA" secondAttribute="trailing" constant="135.5" id="Jfs-RL-23D"/>
-                <constraint firstItem="GrI-M0-VSe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="286" id="PeO-YJ-Lmd"/>
+                <constraint firstItem="GrI-M0-VSe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="316" id="PeO-YJ-Lmd"/>
                 <constraint firstItem="aS8-33-nBA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="135.5" id="fEm-lG-G6P"/>
                 <constraint firstItem="GrI-M0-VSe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="omt-re-FSm"/>
                 <constraint firstItem="aS8-33-nBA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="9" id="q9x-MV-wlO"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="132" y="364.7676161919041"/>
+            <point key="canvasLocation" x="132" y="378.26086956521743"/>
         </view>
     </objects>
 </document>

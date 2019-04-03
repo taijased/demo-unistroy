@@ -15,6 +15,9 @@ class TextureCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
+        imageView.layer.cornerRadius = 5
+        imageView.clipsToBounds = true
+        
         return imageView
     }()
     
@@ -35,21 +38,20 @@ class TextureCollectionViewCell: UICollectionViewCell {
         addSubview(nameLabel)
         
         
-        
-        
+
         backgroundColor = .white
         
         // mainImageView constraints
         mainImageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         mainImageView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        mainImageView.topAnchor.constraint(equalTo: topAnchor, constant: 40).isActive = true
-        mainImageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 1/3).isActive = true
+        mainImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        mainImageView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
         
         // nameLabel constraints
         nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0).isActive = true
         nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        nameLabel.topAnchor.constraint(equalTo: mainImageView.bottomAnchor, constant: Constants.galleryItemWidth * 0.45).isActive = true
-        
+        nameLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        nameLabel.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 2.2).isActive = true
         
         
     }

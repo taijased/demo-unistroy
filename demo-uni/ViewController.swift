@@ -106,7 +106,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var catalogViewController: CatalogViewController!
     var visualEffectView: UIVisualEffectView!
     
-    var catalogHeight:CGFloat = 520
+    var catalogHeight:CGFloat!
     let catalogHandleAreaHeight:CGFloat = 65
     
     
@@ -164,7 +164,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        catalogHeight = self.view.frame.height * 0.85
         setupCatalog()
         //        setupConstraintButton()
         let configuration = ARWorldTrackingConfiguration();
